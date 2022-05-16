@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+/* section{
+    padding: 100px 0;
+} */
+h1,
+h2,
+p {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.logo {
+    margin: 0;
+    font-size: 3.2rem;
+    color: #8B0000;
+
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+
+}
+
+ul li a {
+    color: #ffff;
+    /* padding: 0 2%; */
+    font-size: 2.3rem;
+}
+
+ul li a:hover {
+    color: rgb(51, 214, 51);
+    transition: 0.5s ease-in-out;
+}
+
+.fa-solid  {
+    color: bisque;
+}
+
+#menu {
+    display: none;
+}
+
+.header-content {
+    height: 40rem;
+    display: block;
+      width: 50%; 
+     position: relative;
+     top: 12%;
+     left: 8%; 
+     font-weight: 1000;
+ }
+ 
+ 
+.header-content h1,
+p {
+    color: whitesmoke;
+}
+form{
+    margin: 2.4rem 0;
+}
+input{
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    display: block;
+    margin: 1.2rem 0;
+    padding: 12px 20px;
+    border: 1px solid whitesmoke;
+}
+
+input[type=submit] {
+display: block;
+margin: 1.2rem 0;
+color: bisque;
+width: 50%;
+padding: 12px 20px;
+border: 4px;
+background-color: rgb(78, 193, 78);
+cursor: pointer;
+}
+input[type=submit]:hover{
+    color: black;
+    transition: 0.2s;
+}
+input::placeholder{
+    font-size: 1.3rem;
+    /* color:#ccc; */
+}
+.about-left h2{
+color: black;
+}
+.about-middle h2,p{
+    color: black;
+}
+.about-right h2 p{
+    color: black;
+}
+
+.about-left,
+.about-middle,
+.about-right{
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+.black{
+    color: white
+}
+.btn{
+    display: inline-block;
+margin: 2rem 0;
+color: bisque;
+padding: 8px 16px;
+border: 4px;
+background-color: rgb(78, 193, 78);
+cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    transition: 0.2s;
+}
+.about2{
+    background-color: #222;
+    color: whitesmoke;
+}
+.about2-left{
+flex-basis: 50%;
+}
+.about2-right{
+    flex-basis: 30%;
+}
+.about2 .card{
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #dcdcdc;
+    margin: 1.6rem;
+    text-align: center;
+}
+.contact .row{
+    justify-content: center;
+}
+ .form2{
+display: flex;
+align-items: center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+
+
+}
+/* .contact form{
+width:50%;
+} */
+.contact textarea{
+    width: 50%;
+     padding: 12px 20px; 
+     margin: 1.2rem 0; 
+    border: 1px solid whitesmoke;
+    font-size: 1.3rem;
+     resize: none; 
+     height: 150px; 
+    color: #222;
+}
+footer{
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media only screen and (max-width:700px) {
+   
+.row{
+    flex-direction: column;
+}
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav ul {
+        background: whitesmoke;
+        width: 20rem;
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        color: black;
+        /* padding: 2% 0; */
+        font-weight: 800;
+    }
+
+    #menu {
+        display: block;
+        top: 34px;
+        right: 32px;
+        position: absolute;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+}
+
